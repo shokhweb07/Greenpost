@@ -1,4 +1,5 @@
 @import url(reset.css);
+
 * {
     padding: 0;
     margin: 0;
@@ -59,6 +60,9 @@ ul {
     color: #449BE4;
     font-weight: 600;
 }
+.telephone div a:hover {
+    color: #21bf86;
+}
 .instruksiya {
     position: relative;
     display: block;
@@ -84,7 +88,7 @@ ul {
     font-weight: 600;
 }
 .language p{
-    width: 100px;
+    width: 120px;
     color: #616E81;
     font-weight: 500;
 }
@@ -99,6 +103,7 @@ ul {
 
 /* container start */
 .container {
+    width: 100%;
     background-color: #21bf86;
 }    
 .container ul {
@@ -109,6 +114,26 @@ ul {
 }
 .container ul li {
     padding: 20px 10px;
+}
+.container ul li:first-child {
+    text-align: center;
+    width: 100px;
+}
+.container ul li:nth-child(2){
+    text-align: center;
+    width: 280px;
+}
+.container ul li:nth-child(3){
+    text-align: center;
+    width: 250px;
+}
+.container ul li:nth-child(4){
+    text-align: center;
+    width: 300px;
+}
+.container ul li:last-child{
+    text-align: center;
+    width: 200px;
 }
 .container ul li a {
     color: #fff;
