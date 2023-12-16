@@ -1,0 +1,256 @@
+@import url(reset.css);
+@import url(animate.css);   
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+}
+ul {
+    list-style: none;
+}
+
+/* header start */
+.max_width {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.header .nav_head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-left: 30px;
+}
+.nav_head div {
+    width: 250px;
+}
+.nav_head a {
+    text-decoration: none;
+}
+
+.d-flex {
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+}
+.d-flex img {
+    margin-right: 10px;
+}
+.d-flex div .brand{
+    display: block;
+    font-weight: bold;
+    font-size: 27px;
+    color: #21bf86;
+}
+.d-flex div .slogin {
+    display: block;
+    /* font-weight: 300; */
+    font-size: 12px;
+    color: #21bf86;
+}
+.telephone div {
+    width: 180px;
+    border-bottom: 1px solid darkgray;
+    margin-bottom: 6px;
+}
+.telephone div a {
+    color: #449BE4;
+    font-weight: 600;
+}
+.telephone div a:hover {
+    color: #21bf86;
+}
+.phone1 {
+    margin-right: 10px;
+} 
+.phone2 {
+    margin-right: 50px;
+}
+.instruksiya {
+    position: relative;
+    display: block;
+}
+.instruksiya .lichniy {
+    padding: 6px 12px;
+    color: #21bf86;
+    border: 1px solid #21bf86;
+    border-radius: 4px;
+    font-weight: 500;
+}
+.instruksiya .lichniy:hover {
+    color: #fff;
+    background-color: #21bf86;
+}
+
+.instruksiya .instruktor {
+    text-align: center;
+    width: 100px;
+    border: none;
+    border-bottom: 1px solid darkgray;
+    margin-left: 30px;
+    font-weight: 600;
+}
+.language p{
+    width: 120px;
+    color: #616E81;
+    font-weight: 500;
+}
+.language ul {
+    width: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+/* header end */
+
+/* container start */
+.containerr {
+    background-color: #21bf86;
+}    
+.containerr div  {
+    width: 100%;
+}
+.containerr div ul {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+.containerr ul li {
+    padding: 20px 10px;
+}
+.containerr ul li:first-child {
+    width: 180px;
+    text-align: center;
+}
+.containerr ul li:nth-child(2){
+    width: 250px;
+    text-align: center;
+    border-left: 1px solid #4dcc9e;
+}
+.containerr ul li:nth-child(3){
+    width: 230px;
+    text-align: center;
+    border-left: 1px solid #4dcc9e;
+}
+.containerr ul li:nth-child(4){
+    width: 360px;
+    text-align: center;
+    border-left: 1px solid #4dcc9e;
+}
+.containerr ul li:last-child{
+    width: 214px;
+    text-align: center;
+    border-left: 1px solid #4dcc9e;
+}
+.containerr ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.containerr ul li .btn_menu {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: #21bf86;
+}
+.containerr ul li .btn_menu:hover {
+    background-color: #449BE4;
+}
+.containerr ul li:hover {
+    background-color: #449BE4;
+}
+
+
+/* modal */
+.modal_absolute {
+    margin-left: -330px;
+    margin-top: 162px;
+}
+.modal-dialog .modal-content {
+    width: 350px;
+    border-radius: 0;
+}
+.modal-content .modal-body {
+    width: 100%;
+    display: block;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    padding-left: 10px;
+}
+.modal-content .modal-body ul {
+    width: 330px;
+    display: block;
+    padding-left: 0;
+}
+.modal-content .modal-body ul li {
+    border: none;
+    text-align: left;
+    padding: 8px 0px;
+    padding-left: 6px;
+}
+.modal-content .modal-body ul li a {
+    font-size: 14px;
+    color: #449BE4;
+}
+.modal-content .modal-body ul .li1 {
+    width: 330px;
+}
+.modal-content .modal-body ul .li2 {
+    width: 330px;
+}
+.modal-content .modal-body ul .li3 {
+    width: 330px;
+}
+.modal-content .modal-body ul .li4 {
+    width: 330px;
+}
+.modal-content .modal-body ul .li5 {
+    width: 330px;
+}
+.modal-content .modal-body ul .li6 {
+    width: 330px;
+}
+/* hover */
+.modal-content .modal-body ul li a:hover {
+    color: #fff;
+}
+
+.modal-content .modal-body ul .li1:hover {
+    color: #fff;
+    width: 330px;
+    background-color: #449BE4;
+}
+.modal-content .modal-body ul .li2:hover {
+    color: #fff;
+    width: 330px;
+    background-color: #449BE4;
+}
+.modal-content .modal-body ul .li3:hover {
+    color: #fff;
+    width: 330px;
+    background-color: #449BE4;
+}
+.modal-content .modal-body ul .li4:hover {
+    color: #fff;
+    width: 330px;
+    background-color: #449BE4;
+}
+.modal-content .modal-body ul .li5:hover {
+    color: #fff;
+    width: 330px;
+    background-color: #449BE4;
+}
+.modal-content .modal-body ul .li6:hover {
+    color: #fff;
+    width: 330px;
+    background-color: #449BE4;
+}
+
+/* modal end */
+
+/* container end */
