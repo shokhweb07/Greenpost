@@ -314,7 +314,7 @@ ul {
     padding: 4px;
 }
 .div1 form .col input {
-    width: 350px;
+    /* width: 350px; */
     height: calc(1.5em + 1rem + 2px);
     padding: 0.5rem 1rem;
     font-size: 1.25rem;
