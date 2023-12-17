@@ -166,91 +166,34 @@ ul {
     background-color: #449BE4;
 }
 
-
 /* modal */
-.modal_absolute {
-    margin-left: -330px;
-    margin-top: 154px;
+.containerr .menyular{
+    position: relative;
+    z-index: 10;
 }
-.modal-dialog .modal-content {
-    width: 350px;
-    border-radius: 0;
-}
-.modal-content .modal-body {
-    width: 100%;
-    display: block;
+.containerr .menu-block{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    padding: 10px 0;
+    width: 400px;
     box-shadow: 0 0 20px rgba(0,0,0,0.3);
-    padding-left: 10px;
 }
-.modal-content .modal-body ul {
-    width: 330px;
-    display: block;
-    padding-left: 0;
-}
-.modal-content .modal-body ul li {
-    border: none;
+.containerr .menu-block a{
+    transition: .3s;
     text-align: left;
-    padding: 8px 0px;
-    padding-left: 6px;
+    padding: 10px 20px;
+    color: #449be4;
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
 }
-.modal-content .modal-body ul li a {
-    font-size: 14px;
-    color: #449BE4;
+.containerr .menu-block a:hover{
+    color: white;
+    background-color: #449be4;
 }
-.modal-content .modal-body ul .li1 {
-    width: 330px;
-}
-.modal-content .modal-body ul .li2 {
-    width: 330px;
-}
-.modal-content .modal-body ul .li3 {
-    width: 330px;
-}
-.modal-content .modal-body ul .li4 {
-    width: 330px;
-}
-.modal-content .modal-body ul .li5 {
-    width: 330px;
-}
-.modal-content .modal-body ul .li6 {
-    width: 330px;
-}
-/* hover */
-.modal-content .modal-body ul li a:hover {
-    color: #fff;
-}
-
-.modal-content .modal-body ul .li1:hover {
-    color: #fff;
-    width: 330px;
-    background-color: #449BE4;
-}
-.modal-content .modal-body ul .li2:hover {
-    color: #fff;
-    width: 330px;
-    background-color: #449BE4;
-}
-.modal-content .modal-body ul .li3:hover {
-    color: #fff;
-    width: 330px;
-    background-color: #449BE4;
-}
-.modal-content .modal-body ul .li4:hover {
-    color: #fff;
-    width: 330px;
-    background-color: #449BE4;
-}
-.modal-content .modal-body ul .li5:hover {
-    color: #fff;
-    width: 330px;
-    background-color: #449BE4;
-}
-.modal-content .modal-body ul .li6:hover {
-    color: #fff;
-    width: 330px;
-    background-color: #449BE4;
-}
-
 /* modal end */
 
 /* container end */

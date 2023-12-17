@@ -11,7 +11,7 @@
 
     <header class="header max_width">
         <div class="nav_head">
-            <a href="">
+            <a href="index.html">
             <div  class="d-flex">
                     <img src="https://www.greenpost.uz/images/logo.svg" alt="">
                     <div>
@@ -78,38 +78,17 @@
     <div class="containerr">
         <div>
             <ul class="max_width">
-                <li>
-                    <button type="button" class="btn btn-primary btn_menu" data-bs-toggle="modal" data-bs-target="#exampleModal">Меню</button>
-                <!-- Modal -->
-                <div class="modal fade modal_absolute" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-body">
-          <ul>
-            <li class="li1">
-                <a href="">Как оформить доставку</a>
-            </li>
-            <li class="li2">
-                <a href="">Правила перевозки товаров</a>
-            </li>
-            <li class="li3">
-                <a href="">Советы по почтовому оформлению</a>
-            </li>
-            <li class="li4">
-                <a href="">Про шопинг в Китае</a>
-            </li>
-            <li class="li5">
-                <a href="">Подробнее о таобао</a>
-            </li>
-            <li class="li6">
-                <a href="">Сервис выкупа товаров на TaoBao, Tmall, 1688</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-                </div>
-
+                <li class="menyular" id="menyular">
+                    <a class="head-menu" href="#">Меню</a>
+                    <div class="menu-block" id="menu-block">
+                        <a href="#">Как оформить доставку</a>
+                        <a href="#">Правила перевозки товаров</a>
+                        <a href="#">Советы по почтовому оформлению</a>
+                        <a href="#">Про шопинг в Китае</a>
+                        <a href="#">Подробнее о таобао</a>
+                        <a href="#">Сервис выкупа товаров на TaoBao, Tmall, 1688</a>
+                    </div>
+                </li>
                 </li>
                 <li>
                     <a href="bonus.html">Бонусная программа</a>
@@ -131,8 +110,46 @@
         <div class="banner">
             <img src="img/banner-290823.jpg" alt="">
         </div>
+
+        <div class="container-fluid">
+            <div class="container">
+                <div class="roww">
+                    <div class="div1">
+                        <h3 class="mb-4">Отследить посылку из Китая в Узбекистан</h3>
+                        <form action="">
+                            <div class="col">
+                                <div class="position-relative">
+                                    <input type="text" placeholder="Введите трек-номер посылки">
+                                </div>
+                                <div class="col-auto">
+                                    <button type="submit">Отследить</button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="div1">
+                        <h3 class="mb-4">Проверить поступление товара на склад</h3>
+                        <form action="">
+                            <div class="col">
+                                <div class="position-relative">
+                                    <input type="text" placeholder="Введите трек по Китаю">
+                                </div>
+                                <div class="col-auto">
+                                    <button type="submit">Отследить</button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="line1"></div>
+                </div>
+            </div>
+        </div>
+
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 </body>
 </html>

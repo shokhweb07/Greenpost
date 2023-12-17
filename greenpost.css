@@ -168,7 +168,38 @@ ul {
 
 
 /* modal */
-.modal_absolute {
+
+.containerr .menyular{
+    position: relative;
+}
+
+.containerr .menu-block{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    padding: 10px 0;
+    width: 400px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.containerr .menu-block a{
+    transition: .3s;
+    text-align: left;
+    padding: 10px 20px;
+    color: #449be4;
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.containerr .menu-block a:hover{
+    color: white;
+    background-color: #449be4;
+}
+
+/* .modal_absolute {
     margin-left: -330px;
     margin-top: 162px;
 }
@@ -215,41 +246,6 @@ ul {
 .modal-content .modal-body ul .li6 {
     width: 330px;
 }
-/* hover */
-.modal-content .modal-body ul li a:hover {
-    color: #fff;
-}
-
-.modal-content .modal-body ul .li1:hover {
-    color: #fff;
-    width: 330px;
-    background-color: #449BE4;
-}
-.modal-content .modal-body ul .li2:hover {
-    color: #fff;
-    width: 330px;
-    background-color: #449BE4;
-}
-.modal-content .modal-body ul .li3:hover {
-    color: #fff;
-    width: 330px;
-    background-color: #449BE4;
-}
-.modal-content .modal-body ul .li4:hover {
-    color: #fff;
-    width: 330px;
-    background-color: #449BE4;
-}
-.modal-content .modal-body ul .li5:hover {
-    color: #fff;
-    width: 330px;
-    background-color: #449BE4;
-}
-.modal-content .modal-body ul .li6:hover {
-    color: #fff;
-    width: 330px;
-    background-color: #449BE4;
-}
 
 /* modal end */
 
@@ -257,9 +253,82 @@ ul {
 
 /* main start */
 .main {
+    border: 2px solid red;
+}
+.main .banner {
     width: 100%;
 }
 .main .banner img {
     width: 100%;
-    height: 515px;
+    vertical-align: middle;
+    border-style: none;
+}
+
+/* container-fluid */
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 70px;
+    margin-top: 10px;
+}
+.container-fluid .container {
+    position: relative;
+    max-width: 1420px;
+    margin: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    background: #f2f7f5;
+    border: 1px solid #e5e7e6;
+    border-radius: 4px;
+}
+.container-fluid .container .roww {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.div1 {
+    width: 50%;
+    padding: 40px;
+}
+.line1 {
+    width: 1px;
+    height: 140px;
+    border: 1px dashed #e5e7e6;
+    position: absolute;
+}
+.div1 h3 {
+    font-weight: 500;
+    font-size: 20px;
+    color: #215C65;
+}
+.div1 form .col {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 4px;
+}
+.div1 form .col input {
+    width: 350px;
+    height: calc(1.5em + 1rem + 2px);
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+    margin-right: 20px;
+    border: 1px solid #e5e7e6;
+}
+.div1 form .col button {
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+    color: #fff;
+    background-color: #449be4;
+    border-color: #449be4;
 }
