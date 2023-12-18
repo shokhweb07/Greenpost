@@ -495,8 +495,8 @@ footer .background {
 /* chats */
 .chat {
     position: fixed;
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     padding: 22px;
     border-radius: 50%;
     right: 30px;

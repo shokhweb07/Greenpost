@@ -615,3 +615,16 @@ footer .background {
 #yazik {
     color: white;
 }
+/* chats */
+.chat {
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    padding: 22px;
+    border-radius: 50%;
+    right: 30px;
+    bottom: 30px;
+    background: linear-gradient(95deg, rgb(17, 153, 142) 20%, rgb(56, 239, 125) 80%);
+    box-shadow: 0 19px 38px 0 rgba(34,36,43,.3);
+    display: block;
+}
