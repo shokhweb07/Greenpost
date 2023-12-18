@@ -253,7 +253,7 @@ ul {
 
 /* main start */
 .main {
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 .main .banner {
     width: 100%;
@@ -572,4 +572,46 @@ ul {
     font-size: 52px;
     line-height: 1.3;
     color: #215C65;
+}
+
+/* schedule start */
+.schedule {
+    width: 100%;
+    background-image: url(img/schedule-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 70px 0;
+}
+.mb-5 {
+    margin-bottom: 50px;
+    color: #fff;
+}
+/* table */
+
+.table thead tr th {
+    color: #9293A6;
+    /* vertical-align: bottom; */
+    border: 1px solid #32383E!important;
+}
+
+.table-responsive td {
+    overflow: hidden;
+    max-width: 100px;
+    word-wrap: break-word;
+}
+
+/* footer */
+footer {
+    position: relative;
+    color: #D3D3D3;
+    background: #215c65;
+    border-bottom: 1px solid darkgray;
+}
+footer .background {
+    position: relative;
+    background: #215C65;
+    border-top: 1px solid darkgray;
+}
+#yazik {
+    color: white;
 }
