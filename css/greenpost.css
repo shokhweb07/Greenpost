@@ -165,8 +165,6 @@ ul {
 .containerr ul li:hover {
     background-color: #449BE4;
 }
-
-
 /* modal */
 
 .containerr .menyular{
@@ -198,57 +196,7 @@ ul {
     color: white;
     background-color: #449be4;
 }
-
-/* .modal_absolute {
-    margin-left: -330px;
-    margin-top: 162px;
-}
-.modal-dialog .modal-content {
-    width: 350px;
-    border-radius: 0;
-}
-.modal-content .modal-body {
-    width: 100%;
-    display: block;
-    box-shadow: 0 0 20px rgba(0,0,0,0.3);
-    padding-left: 10px;
-}
-.modal-content .modal-body ul {
-    width: 330px;
-    display: block;
-    padding-left: 0;
-}
-.modal-content .modal-body ul li {
-    border: none;
-    text-align: left;
-    padding: 8px 0px;
-    padding-left: 6px;
-}
-.modal-content .modal-body ul li a {
-    font-size: 14px;
-    color: #449BE4;
-}
-.modal-content .modal-body ul .li1 {
-    width: 330px;
-}
-.modal-content .modal-body ul .li2 {
-    width: 330px;
-}
-.modal-content .modal-body ul .li3 {
-    width: 330px;
-}
-.modal-content .modal-body ul .li4 {
-    width: 330px;
-}
-.modal-content .modal-body ul .li5 {
-    width: 330px;
-}
-.modal-content .modal-body ul .li6 {
-    width: 330px;
-}
-
 /* modal end */
-
 /* container end */
 
 /* main start */
@@ -455,7 +403,7 @@ ul {
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15) !important;
     border-radius: 4px;
     background-color: #fff;
-    padding: 16px;
+    padding: 30px 16px ;
 }
 .row-absolute h3 {
     text-align: center;
@@ -466,7 +414,7 @@ ul {
 }
 /* advantages start */
 .advantages {
-    margin-bottom: 55px;
+    margin-bottom: 0px;
 }
 .advantages h2 {
     margin-bottom: 1.5rem;
@@ -577,7 +525,7 @@ ul {
 /* schedule start */
 .schedule {
     width: 100%;
-    background-image: url(img/schedule-bg.jpg);
+    background-image: url(../img/schedule-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 70px 0;
