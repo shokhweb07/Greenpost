@@ -8,3 +8,15 @@ function mouseOver() {
 function mouseOut() {
   document.getElementById("menu-block").style.display = "none";
 }
+
+
+document.getElementById("ftMenyular").addEventListener("mouseover", mouseOver1);
+document.getElementById("ftMenyular").addEventListener("mouseout", mouseOut1);
+
+function mouseOver1() {
+  document.getElementById("ftMenuBlock").style.display = "block";
+}
+
+function mouseOut() {
+  document.getElementById("ftMenuBlock").style.display = "none";
+}

@@ -482,7 +482,7 @@ footer {
     position: relative;
     color: #D3D3D3;
     background: #215c65;
-    border-bottom: 1px solid darkgray;
+    border-bottom: 1px solid #4dcc9e;
 }
 footer .background {
     position: relative;
@@ -519,4 +519,44 @@ footer .background div ul li .btn_menu1:hover {
 }
 .modal_absolute2 .modal-dialog .modal-content .modal-body ul li a {
     text-decoration: none;
+}
+
+/* f_container */
+
+.f_container {
+    background-color: #215C65;
+}
+.f_container div ul li  {
+    border: none;
+}
+
+/* modal */
+.containerr .ftMenyular{
+    position: relative;
+}
+
+.containerr .ftMenuBlock{
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    background-color: white;
+    padding: 10px 0;
+    width: 400px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.containerr .ftMenuBlock a{
+    transition: .3s;
+    text-align: left;
+    padding: 10px 20px;
+    color: #449be4;
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.containerr .ftMenuBlock a:hover{
+    color: white;
+    background-color: #449be4;
 }

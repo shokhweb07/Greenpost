@@ -224,7 +224,6 @@ ul {
 }
 .container-fluid .container {
     position: relative;
-    max-width: 1420px;
     margin: auto;
     padding-right: 15px;
     padding-left: 15px;
@@ -233,15 +232,14 @@ ul {
     border-radius: 4px;
 }
 .container-fluid .container .roww {
-    display: flex;
+    display: grid;
     align-items: center;
-    justify-content: space-around;
+    grid-template-columns: auto auto;
     /* flex-wrap: wrap; */
     margin-right: -15px;
     margin-left: -15px;
 }
 .div1 {
-    width: 50%;
     padding: 40px;
 }
 .line1 {
@@ -302,7 +300,7 @@ ul {
 }
 .cols {
     width: 300px;  
-    height: 278px;
+    height: 400px;
     position: relative;
     padding: 55px 15px 35px 15px;
     margin: 0px 15px;
@@ -395,10 +393,7 @@ ul {
 
 /* row-absolite */
 .row-absolute {
-    width: 540px;
-    position: absolute;
-    right: 40px;
-    top: -50px;
+    /* width: 540px; */
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15) !important;
     border-radius: 4px;
     background-color: #fff;
@@ -552,7 +547,7 @@ footer {
     position: relative;
     color: #D3D3D3;
     background: #215c65;
-    border-bottom: 1px solid darkgray;
+    border-bottom: 1px solid #4dcc9e;
 }
 footer .background {
     position: relative;
@@ -574,4 +569,323 @@ footer .background {
     background: linear-gradient(95deg, rgb(17, 153, 142) 20%, rgb(56, 239, 125) 80%);
     box-shadow: 0 19px 38px 0 rgba(34,36,43,.3);
     display: block;
+}
+/* f_container */
+
+.f_container {
+    background-color: #215C65;
+}
+.f_container div ul li  {
+    border: none;
+}
+
+/* modal */
+.containerr .ftMenyular{
+    position: relative;
+}
+
+.containerr .ftMenuBlock{
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    background-color: white;
+    padding: 10px 0;
+    width: 400px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.containerr .ftMenuBlock a{
+    transition: .3s;
+    text-align: left;
+    padding: 10px 20px;
+    color: #449be4;
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.containerr .ftMenuBlock a:hover{
+    color: white;
+    background-color: #449be4;
+}
+
+/* media  */
+
+@media (min-width: 990px) and (max-width: 1290px){
+    .containerr {
+        display: none;
+    }
+
+    .container-fluid {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 70px;
+        margin-top: 20px;
+    }
+    .container-fluid .container {
+        position: relative;
+        margin: auto;
+        padding-right: 15px;
+        padding-left: 15px;
+        background: #f2f7f5;
+        border: 1px solid #e5e7e6;
+        border-radius: 4px;
+    }
+    .container-fluid .container .roww {
+        display: grid;
+        grid-template-columns: auto auto;
+        /* flex-wrap: wrap; */
+    }
+    .container-fluid .container .roww .div1 {
+        width: 100%;
+    }
+    .container-fluid .container .roww .div1 h3 {
+        font-size: 16px;
+        font-weight: 500;
+        color: #215C65;
+    }
+    .container-fluid .container .roww .div1 form{
+        width: 100%;
+    }
+    .container-fluid .container .roww .div1 form .col .position-relative  {
+        width: 100%;
+    }
+    .container-fluid .container .roww .div1 form .col .position-relative input {
+        width: 90%;
+        padding-right: 6px;
+        font-size: 14px;
+    }
+    .container-fluid .container .roww .div1 form .col .col-auto button {
+        font-size: 10px;
+        padding: 10px 14px;
+    }
+
+    /* advantages start */
+    .advantages .max_width {
+        width: 100%;
+    }
+    .advantages h2 {
+        margin-bottom: 1.5rem;
+        font-weight: bold;
+        font-size: 30px;
+        color: #215C65;
+    }
+    .advantage-d .advantage {
+        width: 48%;
+    }
+  }
+
+@media (min-width: 0) and (max-width: 990px){
+    .containerr {
+        display: none;
+    }
+
+    .container-fluid {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 70px;
+        margin-top: 20px;
+    }
+    .container-fluid .container {
+        position: relative;
+        margin: auto;
+        padding-right: 15px;
+        padding-left: 15px;
+        background: #f2f7f5;
+        border: 1px solid #e5e7e6;
+        border-radius: 4px;
+    }
+    .container-fluid .container .roww {
+        max-width: 990px;
+        display: grid;
+        grid-template-columns: auto;
+        /* flex-wrap: wrap; */
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    .container-fluid .container .roww .div1 {
+        width: 100%;
+    }
+    .container-fluid .container .roww .div1 form .col .position-relative  {
+        width: 100%;
+    }
+    .container-fluid .container .roww .div1 form .col .position-relative input {
+        width: 90%;
+        font-size: 14px;
+        padding-right: 2px;
+    }
+    .container-fluid .container .roww .div1 form .col .col-auto button {
+        font-size: 10px;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    /* how-it-works start */
+.how-it-works {
+    margin-bottom: 60px;
+    padding-bottom: 10px;
+}
+.how-it-works h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 34px;
+    color: #215C65;
+    padding-bottom: 20px;
+    padding-bottom: 40px;
+}
+.rows {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto auto;
+}
+.cols {
+    color: #9293A6;
+    width: 90%;
+    height: 250px;
+    /* height: 400px; */
+    position: relative;
+    padding-bottom: 0;
+    margin-top: 50px;
+    text-align: center;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(0deg, rgba(33, 191, 134, 0.05), rgba(33, 191, 134, 0.05)), #FFFFFF;
+    box-shadow: 0px 9px 46px rgba(42, 5, 89, 0.1);
+    border-radius: 5px;
+}
+.cols h3 {
+    font-weight: 500;
+    font-size: 20px;
+    color: #215C65;
+}
+.cols p a{
+    color: #449BE4;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.cols .number {
+    position: absolute;
+    left: 10px;
+    top: -15px;
+    font-weight: bold;
+    font-size: 75px;
+    opacity: 0.2;
+    color: #D3D3D3;
+}
+.cols .icon {
+    position: absolute;
+    left: 50%;
+    top: -33px;
+    margin: 0 0 0 -33px;
+    width: 66px;
+    height: 66px;
+    background: #21bf86;
+    border-radius: 50%;
+}
+.cols .icon img {
+    margin-top: 14px;
+    vertical-align: middle;
+}
+/* how-it-works end */
+
+/* tariffs start */ 
+.tariffs {
+    position: relative;
+    margin-bottom: 50px;
+    background: linear-gradient(95.13deg, #449BE4 7.77%, #34A9BB 50.6%, #21BF86 92.19%);
+}
+.tariffs .tariffs-div {
+    display: grid;
+    position: relative;
+    grid-template-columns: auto;
+    padding: 20px;
+}
+.row1 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px dashed #D3D3D3;
+    border-radius: 14px;
+}
+.row2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -10%;
+}
+.row-absolute {
+    width: 100%;
+    /* width: 540px; */
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15) !important;
+    border-radius: 4px;
+    background-color: #fff;
+    
+}
+
+    /* advantages start */
+    .advantages .max_width {
+        width: 100%;
+        padding: 20px;
+    }
+    .advantages h2 {
+        margin-bottom: 1.5rem;
+        font-weight: bold;
+        font-size: 16px;
+        color: #215C65;
+    }
+    .advantages .icon {
+        height: 120px;
+    }
+    .advantages p {
+        width: 100%;
+        font-size: 12px;
+    }
+    .advantages .text span {
+        font-size: 16px;
+    }
+    .advantage-d .advantage {
+        width: 48%;
+    }
+
+}
+
+@media (min-width: 0) and (max-width: 740px) {
+        /* advantages start */
+        .advantages {
+            width: 100%;
+        }
+        .advantages .max_width {
+            width: 100%;
+            /* padding: 8%; */
+        }
+        .advantages h2 {
+            margin-bottom: 2rem;
+            font-weight: bold;
+            font-size: 30px;
+            color: #215C65;
+        }
+        .advantages .icon {
+            height: 100px;
+            width: 100px;
+        }
+        .advantage-d {
+            width: 100%;
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto;
+            margin: auto;
+        }
+        .advantage-d .advantage {
+            width: 100%;
+        }
+        .advantage .text {
+            /* width: 100%; */
+            margin-right: 2%;
+        }
+
 }
