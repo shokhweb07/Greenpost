@@ -830,3 +830,274 @@ footer .background {
         width: 48%;
     }
 }
+
+
+
+@media screen and (max-width: 992px)  {
+    .containerr {
+        display: none;
+    }
+
+    .container-fluid {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 70px;
+        margin-top: 20px;
+    }
+    .container-fluid .container {
+        position: relative;
+        margin: auto;
+        padding-right: 4%;
+        padding-left: 4%;
+        background: #f2f7f5;
+        border: 1px solid #e5e7e6;
+        border-radius: 4px;
+    }
+    .container-fluid .container .roww {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .container-fluid .container .roww .div1 {
+        width: 100%;
+        padding: 2%;
+    }
+    .container-fluid .container .roww .div1 h3 {
+        font-size: 20px;
+        padding-left: 2%;
+    }
+    .container-fluid .container .roww .div1 form .col .position-relative  {
+        width: 100%;
+    }
+    .container-fluid .container .roww .div1 form .col .position-relative input {
+        width: 98%;
+        font-size: 16px;
+        padding-right: 4%;
+    }
+    .container-fluid .container .roww .div1 form .col .col-auto button {
+        font-size: 10px;
+        padding: 8px 14px;
+        font-size: 16px;
+    }
+
+        /* how-it-works start */
+    .how-it-works {
+        margin-bottom: 60px;
+        padding-bottom: 10px;
+    }
+    .how-it-works h2 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 34px;
+        color: #215C65;
+        padding-bottom: 20px;
+        padding-bottom: 40px;
+    }
+    .how-it-works .rows {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-around;
+    }
+    .cols {
+        color: #9293A6;
+        width: 90%;
+        height: 80%;
+        position: relative;
+        margin-top: 50px;
+        text-align: center;
+        border-radius: 5px;
+    }
+    .cols h3 {
+        font-weight: 500;
+        font-size: 20px;
+        color: #215C65;
+    }
+    .cols p {
+        font-size: 16px;
+    }
+
+    .tariffs {
+        position: relative;
+        margin-bottom: 50px;
+    }
+    .tariffs .tariffs-div {
+        display: block;
+        grid-template-columns: auto;
+        padding: 20px;
+        padding-bottom: 0;
+    }
+    .row1 {
+        width: 100%;
+        border: 1px dashed #D3D3D3;
+        border-radius: 14px;
+    }
+    .row2 {
+        position: static;
+        width: 100%;
+    }
+    .row-absolute {
+        width: 100%;
+        padding-bottom: 2%;
+        box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15) !important;
+        border-radius: 4px;
+        background-color: #fff;
+    }  
+    .row-absolute .table {
+        font-size: 17px;
+    }
+
+    .advantages .max_width {
+        width: 100%;
+        padding: 20px;
+    }
+    .advantages h2 {
+        margin-bottom: 1.5rem;
+        font-weight: bold;
+        font-size: 34px;
+        color: #215C65;
+    }
+    .advantage .icon {
+        height: 120px;
+    }
+    .advantages p {
+        width: 110%;
+        font-size: 16px;
+    }
+    .advantages .text span {
+        font-size: 18px;
+    }
+    .advantage-d .advantage {
+        width: 48%;
+    }
+
+    @media screen and (max-width: 828px) {
+        .advantages .max_width {
+            width: 100%;
+            padding: 20px;
+        }
+        .advantages h2 {
+            margin-bottom: 1.5rem;
+            font-weight: bold;
+            font-size: 34px;
+            color: #215C65;
+        }
+        .advantage .icon {
+            height: 124px;
+        }
+        .advantages p {
+            width: 110%;
+            font-size: 14px;
+        }
+        .advantages .text span {
+            font-size: 16px;
+        }
+        .advantage-d .advantage {
+            width: 48%;
+        }
+    }
+    footer {
+        display: none;
+    }
+    .chat {
+        position: absolute;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+        /* how-it-works start */
+    .how-it-works {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 60px;
+        padding-bottom: 10px;
+    }
+    .how-it-works h2 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 34px;
+        color: #215C65;
+        padding-bottom: 20px;
+        padding-bottom: 40px;
+    }
+    .how-it-works .rows {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto ;
+        justify-content: space-around;
+        margin: auto;
+    }
+    .cols {
+        color: #9293A6;
+        width: 96%;
+        height: 80%;
+        position: relative;
+        margin-top: 50px;
+        text-align: center;
+        border-radius: 5px;
+    }
+    .cols h3 {
+        font-weight: 500;
+        font-size: 24px;
+        color: #215C65;
+    }
+    .cols p {
+        font-size: 18px;
+    }
+
+    .advantages .max_width {
+        width: 100%;
+        padding: 20px;
+    }
+    .advantages h2 {
+        margin-bottom: 1.5rem;
+        font-weight: bold;
+        font-size: 34px;
+    }
+    .advantage-d {
+        width: 100%;
+        display: block;
+        margin-bottom: 0;
+    }
+    .advantage-d .advantage {
+        width: 100%;
+    }
+    .advantage .text p {
+        font-size: 16px;
+    }
+    .advantages .text span {
+        font-size: 18px;
+        
+    }
+    header {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .advantage .icon2 {
+        height: 170px;
+    }
+    .advantage .icon4 {
+        height: 170px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .advantage-d .advantage .icon1 {
+        height: 170px;
+    }
+    .advantage-d .advantage .icon2 {
+        height: 170px;
+    }
+    .advantage-d .advantage .icon4 {
+        height: 200px;
+    }
+    @media screen and (max-width:360px) {
+        .advantage-d .advantage .icon4 {
+            height: 230px;
+        }
+    }
+}
