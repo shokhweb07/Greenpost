@@ -610,13 +610,11 @@ footer .background {
     background-color: #449be4;
 }
 
+
 /* media  */
 
-@media (min-width: 990px) and (max-width: 1290px){
-    .containerr {
-        display: none;
-    }
 
+@media screen and (max-width: 1400px){
     .container-fluid {
         width: 100%;
         padding-right: 15px;
@@ -638,13 +636,12 @@ footer .background {
     .container-fluid .container .roww {
         display: grid;
         grid-template-columns: auto auto;
-        /* flex-wrap: wrap; */
     }
     .container-fluid .container .roww .div1 {
         width: 100%;
     }
     .container-fluid .container .roww .div1 h3 {
-        font-size: 16px;
+        font-size: 22px;
         font-weight: 500;
         color: #215C65;
     }
@@ -657,14 +654,13 @@ footer .background {
     .container-fluid .container .roww .div1 form .col .position-relative input {
         width: 90%;
         padding-right: 6px;
-        font-size: 14px;
+        font-size: 18px;
     }
     .container-fluid .container .roww .div1 form .col .col-auto button {
-        font-size: 10px;
+        font-size: 18px;
         padding: 10px 14px;
     }
 
-    /* advantages start */
     .advantages .max_width {
         width: 100%;
     }
@@ -679,10 +675,8 @@ footer .background {
     }
   }
 
-@media (min-width: 0) and (max-width: 990px){
-    .containerr {
-        display: none;
-    }
+
+@media screen and (max-width: 1200px)  {
 
     .container-fluid {
         width: 100%;
@@ -694,24 +688,23 @@ footer .background {
         margin-top: 20px;
     }
     .container-fluid .container {
+        width: 100%;
         position: relative;
         margin: auto;
-        padding-right: 15px;
-        padding-left: 15px;
+        padding-right: 4%;
+        padding-left: 4%;
         background: #f2f7f5;
         border: 1px solid #e5e7e6;
         border-radius: 4px;
     }
     .container-fluid .container .roww {
-        max-width: 990px;
-        display: grid;
-        grid-template-columns: auto;
-        /* flex-wrap: wrap; */
-        margin-right: -15px;
-        margin-left: -15px;
+        width: 100%;
     }
     .container-fluid .container .roww .div1 {
         width: 100%;
+    }
+    .container-fluid .container .roww .div1 h3 {
+        font-size: 20px;
     }
     .container-fluid .container .roww .div1 form .col .position-relative  {
         width: 100%;
@@ -719,115 +712,103 @@ footer .background {
     .container-fluid .container .roww .div1 form .col .position-relative input {
         width: 90%;
         font-size: 14px;
-        padding-right: 2px;
+        padding-right: 4%;
     }
     .container-fluid .container .roww .div1 form .col .col-auto button {
         font-size: 10px;
-        padding: 10px 20px;
+        padding: 8px 14px;
         font-size: 14px;
     }
 
-    /* how-it-works start */
-.how-it-works {
-    margin-bottom: 60px;
-    padding-bottom: 10px;
-}
-.how-it-works h2 {
-    text-align: center;
-    font-weight: bold;
-    font-size: 34px;
-    color: #215C65;
-    padding-bottom: 20px;
-    padding-bottom: 40px;
-}
-.rows {
-    display: grid;
-    align-items: center;
-    grid-template-columns: auto auto;
-}
-.cols {
-    color: #9293A6;
-    width: 90%;
-    height: 250px;
-    /* height: 400px; */
-    position: relative;
-    padding-bottom: 0;
-    margin-top: 50px;
-    text-align: center;
-    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(0deg, rgba(33, 191, 134, 0.05), rgba(33, 191, 134, 0.05)), #FFFFFF;
-    box-shadow: 0px 9px 46px rgba(42, 5, 89, 0.1);
-    border-radius: 5px;
-}
-.cols h3 {
-    font-weight: 500;
-    font-size: 20px;
-    color: #215C65;
-}
-.cols p a{
-    color: #449BE4;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-.cols .number {
-    position: absolute;
-    left: 10px;
-    top: -15px;
-    font-weight: bold;
-    font-size: 75px;
-    opacity: 0.2;
-    color: #D3D3D3;
-}
-.cols .icon {
-    position: absolute;
-    left: 50%;
-    top: -33px;
-    margin: 0 0 0 -33px;
-    width: 66px;
-    height: 66px;
-    background: #21bf86;
-    border-radius: 50%;
-}
-.cols .icon img {
-    margin-top: 14px;
-    vertical-align: middle;
-}
-/* how-it-works end */
+        /* how-it-works start */
+    .how-it-works {
+        margin-bottom: 60px;
+        padding-bottom: 10px;
+    }
+    .how-it-works h2 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 34px;
+        color: #215C65;
+        padding-bottom: 20px;
+        padding-bottom: 40px;
+    }
+    .cols {
+        color: #9293A6;
+        width: 90%;
+        position: relative;
+        margin-top: 50px;
+        text-align: center;
+        border-radius: 5px;
+    }
+    .cols h3 {
+        font-weight: 500;
+        font-size: 20px;
+        color: #215C65;
+    }
+    .cols p a{
+        color: #449BE4;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+    .cols .number {
+        position: absolute;
+        left: 10px;
+        top: -15px;
+        font-weight: bold;
+        font-size: 75px;
+        opacity: 0.2;
+        color: #D3D3D3;
+    }
+    .cols .icon {
+        position: absolute;
+        left: 50%;
+        top: -33px;
+        margin: 0 0 0 -33px;
+        width: 66px;
+        height: 66px;
+        background: #21bf86;
+        border-radius: 50%;
+    }
+    .cols .icon img {
+        margin-top: 14px;
+        vertical-align: middle;
+    }
 
-/* tariffs start */ 
-.tariffs {
-    position: relative;
-    margin-bottom: 50px;
-    background: linear-gradient(95.13deg, #449BE4 7.77%, #34A9BB 50.6%, #21BF86 92.19%);
-}
-.tariffs .tariffs-div {
-    display: grid;
-    position: relative;
-    grid-template-columns: auto;
-    padding: 20px;
-}
-.row1 {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    border: 1px dashed #D3D3D3;
-    border-radius: 14px;
-}
-.row2 {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: -10%;
-}
-.row-absolute {
-    width: 100%;
-    /* width: 540px; */
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15) !important;
-    border-radius: 4px;
-    background-color: #fff;
-    
-}
 
-    /* advantages start */
+    .tariffs {
+        position: relative;
+        background: linear-gradient(95.13deg, #449BE4 7.77%, #34A9BB 50.6%, #21BF86 92.19%);
+        padding-bottom: 0;
+    }
+    .tariffs .tariffs-div {
+        position: relative;
+        padding: 20px;
+    }
+    .row1 {
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        border: 1px dashed #D3D3D3;
+        border-radius: 14px;
+    }
+    .row2 {
+        width: 48%;
+        position: absolute;
+        right: 2%;
+        top: -10%;
+    }
+    .row-absolute {
+        width: 100%;
+        padding-bottom: 10%;
+        box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15) !important;
+        border-radius: 4px;
+        background-color: #fff;
+    }  
+    .row-absolute .table {
+        font-size: 17px;
+    }
+
     .advantages .max_width {
         width: 100%;
         padding: 20px;
@@ -835,57 +816,17 @@ footer .background {
     .advantages h2 {
         margin-bottom: 1.5rem;
         font-weight: bold;
-        font-size: 16px;
+        font-size: 34px;
         color: #215C65;
     }
-    .advantages .icon {
-        height: 120px;
-    }
     .advantages p {
-        width: 100%;
-        font-size: 12px;
+        width: 110%;
+        font-size: 16px;
     }
     .advantages .text span {
-        font-size: 16px;
+        font-size: 18px;
     }
     .advantage-d .advantage {
         width: 48%;
     }
-
-}
-
-@media (min-width: 0) and (max-width: 740px) {
-        /* advantages start */
-        .advantages {
-            width: 100%;
-        }
-        .advantages .max_width {
-            width: 100%;
-            /* padding: 8%; */
-        }
-        .advantages h2 {
-            margin-bottom: 2rem;
-            font-weight: bold;
-            font-size: 30px;
-            color: #215C65;
-        }
-        .advantages .icon {
-            height: 100px;
-            width: 100px;
-        }
-        .advantage-d {
-            width: 100%;
-            display: grid;
-            grid-template-columns: auto;
-            grid-template-rows: auto;
-            margin: auto;
-        }
-        .advantage-d .advantage {
-            width: 100%;
-        }
-        .advantage .text {
-            /* width: 100%; */
-            margin-right: 2%;
-        }
-
 }
