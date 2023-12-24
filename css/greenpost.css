@@ -1071,9 +1071,6 @@ footer .background {
         font-size: 18px;
         
     }
-    header {
-        display: none;
-    }
 }
 
 @media screen and (max-width: 425px) {
