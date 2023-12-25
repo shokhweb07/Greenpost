@@ -585,7 +585,7 @@ footer .background div ul li .btn_menu1:hover {
         position: fixed;
         bottom: 2%;
         right: 2%;
-    }
+    } 
 }
 
 @media screen and (max-width: 576px) {
