@@ -410,3 +410,13 @@ footer .background {
     color: white;
     background-color: #449be4;
 }
+
+/* media start */
+@media screen and (max-width: 992px) {
+    .containerr {
+        display: none;
+    }
+    footer {
+        display: none;
+    }
+}

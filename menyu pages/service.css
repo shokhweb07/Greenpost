@@ -346,7 +346,7 @@ footer .background {
 .containerr .ftMenyular{
     position: relative;
 }
-
+ 
 .containerr .ftMenuBlock{
     display: none;
     position: absolute;
@@ -371,4 +371,42 @@ footer .background {
 .containerr .ftMenuBlock a:hover{
     color: white;
     background-color: #449be4;
+}
+
+/* media start */
+@media screen and (max-width: 1200px){
+    .site-BS .container p {
+        width: 100%;
+    }    
+}
+@media screen and (max-width: 992px) {
+    .containerr {
+        display: none;
+    }
+    .site-BS h1 {
+        font-size: 40px;
+    }
+    .site-BS .container p {
+        width: 100%;
+    }
+    .site-BS .container .roww {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .site-BS .container .roww .div2 img {
+        width: 100%;
+    }
+    footer {
+        display: none;
+    }
+    .chat {
+        position: fixed;
+        bottom: 2%;
+        right: 4%;
+    }
+}
+@media screen and (max-width: 576px){
+    .site-BS h1 {
+        font-size: 34px;
+    }
 }

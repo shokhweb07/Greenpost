@@ -310,3 +310,24 @@ footer .background {
     color: white;
     background-color: #449be4;
 }
+
+/* media start */
+@media screen and (max-width: 992px) {
+    .containerr {
+        display: none;
+    }
+    .site-TR h1 {
+        font-size: 40px;
+    }
+    footer {
+        display: none;
+    }
+    header {
+        display: none;
+    }
+}
+@media screen and (max-width: 375px) {
+    .site-TR h1 {
+        font-size: 38px;
+    }
+}
