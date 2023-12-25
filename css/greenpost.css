@@ -834,9 +834,9 @@ footer .background {
 
 
 @media screen and (max-width: 992px)  {
-    /* .containerr {
+    .containerr {
         display: none;
-    } */
+    }
 
     .container-fluid {
         width: 100%;
