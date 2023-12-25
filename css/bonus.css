@@ -581,6 +581,12 @@ footer .background div ul li .btn_menu1:hover {
     .main .rows .cols {
         width: 100%;
     }
+    .chat {
+        position: fixed;
+        bottom: 2%;
+        right: 2%;
+    }
+    
 }
 
 @media screen and (max-width: 576px) {
