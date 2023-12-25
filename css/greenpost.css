@@ -29,6 +29,26 @@ ul {
 .nav_head div {
     width: 250px;
 }
+
+.profile-menu{
+    padding: 0 .5rem;
+}
+
+.burger-menu{
+    transition: .3s;
+    cursor: pointer;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.burger-menu .menu-line{
+    width: 30px;
+    height: 5px;
+    background-color: #21bf86;
+    border-radius: 2px;
+}
+
 .nav_head a {
     text-decoration: none;
 }
@@ -200,9 +220,7 @@ ul {
 /* container end */
 
 /* main start */
-.main {
-    /* border: 2px solid red; */
-}
+
 .main .banner {
     width: 100%;
 }
@@ -609,12 +627,110 @@ footer .background {
     color: white;
     background-color: #449be4;
 }
-
-
 /* media  */
+.menu {
+    z-index: 100;
+}
+.menu-wrapper{
+    transition: .3s;
+    display: none;
+    position: relative;
+}
+
+.menu-wrapper .menu{
+    transition: opacity 0.3s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 4.4fr 1fr;
+}
+
+.menu .menu-part{
+    font-size: 16px;
+    background-color: white;
+}
+
+.menu .empty-part{
+    background-color: black;
+    opacity: .5;
+}
+
+.menu-part .ins-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    padding: 15px;
+    padding-bottom: 0;
+}
+
+.menu-part .exit-menu{
+    cursor: pointer;
+}
+
+.text1{
+    color: #449BE4;
+    font-size: 16px;
+}
+
+.sd-menu{
+    background-color: #21bf86;
+    color: white;
+    padding: 10px 15px;
+}
+
+.sd-menu a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.sd-menu .m-ul{
+    line-height: 2.5;
+}
+
+
+.sd-menu .m-ul li a{
+    color: #fff;
+}
+
+.sd-menu .other-menus{
+    line-height: 2.5;
+}
+
+.sd-menu .border-bottom11{
+    border-bottom: 1px solid #4dcc9e;
+}
+
+.menu-part .part2{
+    padding: 10px 15px;
+}
+
+.part2 .lang{
+    margin-top: 10px;
+}
+
+.part2 .lang p{
+    color: #616E81;
+}
+
+.part2 .lang-flags{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+/*  */
 
 
 @media screen and (max-width: 1400px){
+    header {
+        z-index: 50;
+    }
+    main {
+        z-index: 0;
+    }
     .container-fluid {
         width: 100%;
         padding-right: 15px;
@@ -623,6 +739,7 @@ footer .background {
         margin-left: auto;
         margin-bottom: 70px;
         margin-top: 20px;
+        z-index: 0;
     }
     .container-fluid .container {
         position: relative;
@@ -832,7 +949,75 @@ footer .background {
 }
 
 
+@media only screen and (max-width: 991.5px){
+    .telephone, .instruksiya, .language, .menus-wrap{
+        display: none;
+    }
 
+    header{
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        position: fixed;
+        top: 0px;
+        left: 0;
+        right: 0;
+        background-color: white;
+        /* z-index: 100; */
+        width: 100%;
+    }
+
+    .menu .menu-part{
+        z-index: 20;
+    }
+
+    .header .nav_head{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 991.6px){
+    .burger-menu, .profile-menu{
+        display: none;
+    }
+
+    .d-flex{
+        margin: 0;
+    }
+ }
+
+@media only screen and (max-width: 520px){
+    .telephone11{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 415px){
+    .menu .menu-part{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 410px){
+    .d-flex{
+        max-width: 240px;
+        margin-right: 0px;
+    }
+
+    .d-flex div .brand{
+        font-size: 20px;
+    }
+    .header .nav_head{
+        margin-left: 15px;
+    }
+} 
+
+/* media start */
 @media screen and (max-width: 992px)  {
     .containerr {
         display: none;
@@ -972,6 +1157,10 @@ footer .background {
         width: 48%;
     }
 
+    .main .banner {
+        margin-top: 90px;
+    }
+
     @media screen and (max-width: 828px) {
         .advantages .max_width {
             width: 100%;
@@ -1003,7 +1192,7 @@ footer .background {
     .chat {
         position: fixed;
         bottom: 2%;
-        right: 4%;
+        right: 6%;
     }
 }
 
@@ -1081,6 +1270,9 @@ footer .background {
     }
     .advantage .icon4 {
         height: 170px;
+    }
+    .main .banner {
+        margin-top: 80px;
     }
 }
 
