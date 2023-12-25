@@ -560,3 +560,52 @@ footer .background div ul li .btn_menu1:hover {
     color: white;
     background-color: #449be4;
 }
+
+/* media start */
+@media screen and (max-width: 992px) {
+    .containerr {
+        display: none;
+    }
+    footer {
+        display: none;
+    }
+    .site-BP {
+        width: 100%;
+    }
+    .site-BP h1 {
+        font-size: 48px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main .rows .cols {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .site-BP h1 {
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .main .rows .cols {
+        display: grid;
+        grid-template-columns: auto;
+        margin-top: 0;
+    }
+    .main .rows .cols div {
+        margin-bottom: 14%;
+    }
+    .main .rows .cols .platinum {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .main h2 {
+        width: 90%;
+        font-size: 34px;
+        margin-left: 6%;
+        margin-right: 2%;
+    }
+}
