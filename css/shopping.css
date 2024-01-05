@@ -1,0 +1,226 @@
+@import url(reset.css);
+@import url(animate.css); 
+@import url(nav.css);
+
+*{
+    font-family: sans-serif;
+}
+
+main .shopping-name{
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 1.3;
+    color: #215C65;
+    padding: 50px 0px;
+    text-align: center;
+}
+
+main .wrap-name{
+    margin: 50px 0px;
+    font-size: 20px;
+    color: #215C65;
+    text-align: center;
+    font-weight: bold;
+}
+
+main .wrap-name span{
+    color: orange;
+}
+
+main .main-wrap{
+    margin: 0 auto;
+}
+
+.main-wrap .taobao-img{
+    margin: 50px auto;
+    padding: 3px;
+    border: 2px solid black;
+    max-width: 70%;
+}
+
+.main-wrap .taobao-img img{
+    border: 2px solid black;
+    width: 100%;
+}
+
+.main-wrap .taobao-text{
+    font-size: 20px;
+    line-height: 1.5em;
+    margin-bottom: 1.5rem;
+    color: #616E81;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.main-wrap .tb-btn-div{
+    display: flex;
+    justify-content: center;
+}
+
+.main-wrap .tb-btn{
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+    background: linear-gradient(to right, rgb(2, 129, 2) 0%, rgb(2, 120, 2) 50%, rgb(1, 91, 1) 50%, rgb(1, 69, 1) 100%);
+    border-radius: 7px;
+    width: 250px;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 18px 10px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.main-wrap .tb-btn:hover{
+    background: linear-gradient(to right, #0a0 0%, #080 50%, #060 50%, #040 100%);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+}
+
+.magazin-block{
+    width: 100%;
+    background: url('	https://www.greenpost.uz/images/schedule-bg.jpg');
+    background-attachment: fixed;
+    background-color: #cfc;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.magazin-block .magazin-menu{
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    row-gap: 50px;
+    column-gap: 107px;
+    margin-bottom: 20px;
+}
+
+.magazin-menu .magazin-item{
+    border: 1px solid #000;
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    background-color: #ccc;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .5), inset -5px -5px 5px rgba(0, 0, 0, .5), inset 5px 5px 5px rgba(255, 255, 255, 1);
+    text-align: center;
+    padding-top: 7px;
+}
+
+.magazin-menu .magazin-item a{
+    color: #449BE4;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 16px;
+}
+
+.magazin-block h3{
+    color: #fff;
+    font-weight: bolder;
+    background-color: rgba(0, 0, 0, .8);
+    width: 250px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    margin: auto;
+    text-shadow: 1px 1px #000;
+    z-index: 2;
+    font-size: 18px;
+}
+
+.taobao-kupit{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    display: flex;
+}
+
+.taobao-kupit .block{
+    width: 50%;
+    padding: 0px 15px;
+}
+
+.taobao-kupit .net-img img{
+    width: 100%;
+}
+
+.taobao-kupit .block-text{
+    text-align: center;
+    color: #616E81;
+    font-size: 16px;
+    padding-top: 20px;
+    padding-bottom: 16px;
+    line-height: 25px;
+}
+
+.taobao-kupit .kupit-btn{
+    background: linear-gradient(to right, #279EDA 0%, #178EcA 50%, #077EbA 50%, #056EaA 100%);
+    display: block;
+    padding: 18px 10px;
+    font-size: 16px;
+    color: #fff;
+    margin: 20px auto 0;
+    text-decoration: none;
+    width: 250px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
+    text-align: center;
+}
+
+.taobao-kupit .kupit-btn:hover{
+    background: linear-gradient(to right, #34abe6 0%, #2da3de 50%, #098dcf 50%, #0678ba 100%);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+}
+
+@media only screen and (max-width: 991.6px){
+    .taobao-kupit{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .taobao-kupit .block{
+        width: 90%;
+        margin: 0 auto;
+    }
+    footer{
+        display: none;
+    }
+    .magazin-block .magazin-menu{
+        grid-template-columns: repeat(3, 150px);
+        column-gap: 90px;
+    }
+
+    main .shopping-name{
+        margin-top: 60px;
+        font-size: 40px;
+    }
+}
+
+
+@media only screen and (max-width: 891.6px){
+    .magazin-block .magazin-menu{
+        column-gap: 75px;
+    }
+}
+
+@media only screen and (max-width: 791.6px){
+    .magazin-block .magazin-menu{
+        column-gap: 50px;
+    }
+}
+
+@media only screen and (max-width: 691.6px){
+    .magazin-block .magazin-menu{
+        column-gap: 35px;
+    }
+}
+
+@media only screen and (max-width: 576px){
+    .magazin-block .magazin-menu{
+        grid-template-columns: repeat(1, 150px);
+        row-gap: 40px;
+    }
+}

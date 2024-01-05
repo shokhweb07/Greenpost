@@ -1,0 +1,169 @@
+@import url(reset.css);
+@import url(animate.css); 
+@import url(nav.css);  
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+}
+ul {
+    list-style: none;
+}
+
+
+main{
+    margin: 0 auto;
+    padding: 10%;
+}
+
+.main .main-h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 1.3;
+    color: #215C65;
+    padding: 50px 0px;
+}
+
+.main .wrmain{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 25px;
+    padding: 50px 0;
+}
+
+.wrmain h3{
+    font-size: 20px;
+    font-weight: bolder;
+    color: #333;
+    text-align: left;
+}
+
+.wrmain p{
+    font-size: 20px;
+    text-align: left;
+    color: #333;
+    line-height: 1.5;
+}
+
+.wrmain .imgDiv{
+    padding: 3px;
+    border: 2px solid black;
+}
+
+.wrmain .block2 img{
+    width: 100%;
+    border: 2px solid black;
+}
+
+.main h1{
+    padding: 50px 0;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 52px;
+}
+
+* {
+	font-family: Arial, sans;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+h1, h2 {
+	margin: 1em 0 0 0;
+	text-align: center;
+}
+h2 {
+	margin: 0 0 1em 0;
+}
+#container1 {
+    margin: 0 auto;
+    width: 100%;
+}
+#accordion input {
+	display: none;
+}
+#accordion label {
+    width: 100%;
+    transition: .1s;
+    color: #215C65;
+    padding: 1.6rem 2.1rem;
+    background-color: rgba(0,0,0,0.03);
+    border-bottom: 1px solid rgba(0,0,0,0.125);
+	border-radius: .25rem;
+    font-weight: 400;
+    font-size: 1.2rem;
+	cursor: pointer;
+	display: block;
+	z-index: 20;
+}
+#accordion label:hover {
+	background: #ccc;
+}
+
+#accordion input:checked + label {
+	background: #ccc;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	color: white;
+	margin-bottom: 0;
+}
+#accordion article {
+	background: #f7f7f7;
+	height:0px;
+	overflow:hidden;
+	z-index:10;
+}
+#accordion article p {
+	padding: 1.25rem;
+    line-height: 1.4;
+    color: #616E81;
+    font-size: 16px;
+}
+
+#accordion input:checked ~ article {
+	border-bottom-left-radius: .25em;
+	border-bottom-right-radius: .25em;
+	height: auto;
+	margin-bottom: .125em;
+}
+
+#block-text1{
+    display: none;
+}
+
+.hero-img img{
+    width: 100%;
+}
+
+@media only screen and (max-width: 991.5px){
+    .main .wrmain{
+        grid-template-columns: 1fr;
+    }
+
+    #block-text2{
+        display: none;
+    }
+
+    #block-text1{
+        display: block;
+    }
+
+    main{
+        padding: 4%;
+    }
+}
+
+@media only screen and (max-width: 595px){
+    #container1 {
+        max-width: 400px;
+    }
+
+    .main .main-h1, .main h1{
+        font-size: 40px;
+    }
+}
