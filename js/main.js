@@ -52,19 +52,20 @@ function vxod(){
 }
 
 // admin panel
-function hideMenu(){
+function hideMenu1(){
   document.querySelector('.asosiy').classList.toggle('hide-active')
 }
 
-function a1(){
-  document.getElementById('asosiy').style.display = 'none'
+function hideMenu2(){
+  document.getElementById('asosiy').style.display = 'block'
+  document.getElementById('b-sidebar-backdrop').style.display = 'block'
 }
 
-// function phone(){
-//   document.querySelector('.phoneright').classList.toggle('hide-active')
-// }
 
-
+function sidebar_backdrop(){
+  document.querySelector('.asosiy').style.display = 'none'
+  document.getElementById('b-sidebar-backdrop').style.display = 'none'
+}
 
 // tovari 
 
