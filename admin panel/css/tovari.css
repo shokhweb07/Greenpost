@@ -228,6 +228,21 @@
     opacity: .6;
 
 }
+/* modal */
+.mb-sm-3 {
+    margin-bottom: 1rem;
+}
+
+select {
+    height: 34px;
+    width: 100%;
+}
+
+
+.collapse {
+    display: none;
+}
+
 
 /* media start */
 

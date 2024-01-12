@@ -91,6 +91,11 @@ function nacklade(){
   BVID48.style.background = '#fff'
 }
 
+function uslugi1(){
+  document.querySelector('.collapse').style.display = 'block'
+}
+
+
 // posilki 
 
 function obrabotke(){

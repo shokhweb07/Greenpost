@@ -11,6 +11,7 @@
 <body>
     
     <div class="wrapper">
+
         <div class="asosiy" id="asosiy">
             <div class="profil-dr">
             <div class="dropdown dropdown1">
@@ -58,7 +59,9 @@
                 </div>
                 
         </div>
+
         <div class="part">
+
             <div class="header">
                     <div class="qism1">
                         <div class="btn-hid btn-hid1" onclick="hideMenu1()"><svg viewBox="0 0 16 16" width="1em" height="1em" focusable="false" role="img" aria-label="list" xmlns="http://www.w3.org/2000/svg" fill="white" class="bi-list b-icon bi" style="font-size: 250%;"><g><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path></g></svg></div>
@@ -110,17 +113,199 @@
                     </div>
                 </div>
             </div>
+
             <main>
                 <div class="container-fluid">
                     <div>
                         <div class="row">
                             <div class="col"><h2 class="mb-4">Товары</h2></div>
                             <div class="col-auto">
-                                <button type="button" class="btn btn-success btn-lg" style="cursor: pointer; color: #fff; background-color: #28a745; border-color: #28a745;">
+                                <button type="button" class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal" style="cursor: pointer; color: #fff; background-color: #28a745; border-color: #28a745;">
                                     <svg viewBox="0 0 16 16" width="25px" height="25px" focusable="false" role="img" aria-label="plus circle" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi-plus-circle b-icon bi"><g><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"></path></g>
                                     </svg>
                                     Новый товар 
                                 </button>
+
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" >
+                                      <div class="modal-content" style="border-radius: 4px;">
+                                        <div class="modal-header" style="border-radius: 4px 4px 0 0; background-color: #17a2b8; color: #fff;">
+                                          <h1 class="modal-title fs-5" id="exampleModalLabel">Добавить новый заказ</h1>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: red;"></button>
+                                        </div>
+                                        <div class="modal-body">
+
+                                            <form action="">
+                                                <div class="form-group px-3 py-2 border border-info rounded-pill" style="margin-bottom: 1rem;">
+                                                    <div class="d-inline-block mr-2 mb-1 d-flex align-items-center">
+                                                        <input type="checkbox" class="custom-control-input" value="true" id="__BVID__257" style="width: 30px;height: 20px; margin-right: 6px;">
+                                                        <div class="custom-control custom-switch b-custom-control-lg">
+                                                            <label class="custom-control-label" for="__BVID__257" style="margin-right: 8px; font-size: 18px;"><small>Отправить в один клик</small></label>
+                                                        </div>
+                                                        <svg viewBox="0 0 16 16" width="1em" height="1em" focusable="false" role="img" aria-label="question circle" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi-question-circle my-1 align-middle b-icon bi"><g><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path><path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"></path></g>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-row form-group mb-1 mb-sm-3 d-flex align-items-center">
+                                                    <label for="form-track-number" class="col-sm-6 col-form-label"> Номер для отслеживания <span class="text-danger">*</span></label>
+                                                    <div class="col">
+                                                        <input type="text" id="form-track-number" required="required" class="form-control" inputmode="text">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-row form-group mb-1 mb-sm-3 d-flex align-items-center">
+                                                    <label for="form-category" class="col-sm-6 col-form-label"> Категория </label>
+
+                                                    <div class="col">
+                                                        <select id="form-category" class="custom-select">
+                                                            <option value="Аксессуары для одежды и ткани">Аксессуары для одежды и ткани</option>
+                                                            <option value="Обувь">Обувь</option>
+                                                            <option value="Спорт и развлечение">Спорт и развлечение</option>
+                                                            <option value="Канцтовары для офиса и дома">Канцтовары для офиса и дома</option>
+                                                            <option value="Компьютеры и офисные принадлежности">Компьютеры и офисные принадлежности</option>
+                                                            <option value="Мобильные телефоны, электроника">Мобильные телефоны, электроника</option>
+                                                            <option value="Одежда">Одежда</option><option value="Игрушки">Игрушки</option>
+                                                            <option value="Для малышей">Для малышей</option>
+                                                            <option value="Красота и здоровье">Красота и здоровье</option>
+                                                            <option value="Бижутерия и аксессуары">Бижутерия и аксессуары</option>
+                                                            <option value="Часы">Часы</option>
+                                                            <option value="Багаж и сумки">Багаж и сумки</option>
+                                                            <option value="Продукты питания">Продукты питания</option>
+                                                            <option value="Дом и сад">Дом и сад</option>
+                                                            <option value="Мебель">Мебель</option>
+                                                            <option value="Строительство и ремонт">Строительство и ремонт</option>
+                                                            <option value="Бытовая техника">Бытовая техника</option>
+                                                            <option value="Инструменты">Инструменты</option>
+                                                            <option value="Освещение">Освещение</option>
+                                                            <option value="Безопасность и защита">Безопасность и защита</option>
+                                                            <option value="Запчасти и аксессуары для транспортных средств">Запчасти и аксессуары для транспортных средств</option>
+                                                        </select>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="form-row form-group mb-1 mb-sm-3 d-flex align-items-center">
+                                                    <label for="form-subcategory" class="col-sm-6 col-form-label"> Подкатегория </label>
+                                                    <div class="col">
+                                                        <select id="form-subcategory" disabled="disabled" class="custom-select"></select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-row form-group mb-1 mb-sm-3 d-flex align-items-center">
+                                                    <label for="form-subcategory" class="col-sm-6 col-form-label"> Наименование товара * </label>
+                                                    <div class="col">
+                                                        <select id="form-subcategory" disabled="disabled" class="custom-select"></select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-row form-group mb-1 mb-sm-3 d-flex align-items-center">
+                                                    <label for="form-product-count" class="col-sm-6 col-form-label"> Количество <span class="text-danger">*</span></label>
+                                                    <div class="col">
+                                                        <input type="tel" id="form-product-count" required="required" class="form-control" inputmode="numeric">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-row form-group d-flex align-items-center">
+                                                    <label for="form-product-price" class="col-sm-6 col-form-label"> Ценность в $ <span class="text-danger">*</span></label>
+                                                    <div class="col">
+                                                        <input type="tel" id="form-product-price" required="required" class="form-control" inputmode="decimal">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group" style="margin-top: 10px;">
+                                                    <div class="d-inline-block mr-2 mb-1 ">
+                                                        <div class="custom-control custom-switch b-custom-control-lg d-flex align-items-center">
+                                                            <input type="checkbox" class="custom-control-input" value="true" id="__BVID__104" style="width: 30px; height: 20px; margin-right: 4px;">
+                                                            <label class="custom-control-label" for="__BVID__104" style="margin-right: 10px; font-size: 18px;"><small>Товар копии Brand</small></label>
+                                                            <svg viewBox="0 0 16 16" width="1em" height="1em" focusable="false" role="img" aria-label="question circle" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi-question-circle my-1 align-middle b-icon bi"><g><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path><path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"></path></g></svg>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group" style="margin-top: 10px;">
+                                                    <div class="d-inline-block mr-2 mb-1 ">
+                                                        <div class="custom-control custom-switch b-custom-control-lg d-flex align-items-center">
+                                                            <input type="checkbox" class="custom-control-input" value="true" id="__BVID__104" style="width: 30px; height: 20px; margin-right: 4px;">
+                                                            <label class="custom-control-label" for="__BVID__104" style="margin-right: 10px; font-size: 18px;"><small>Товар с батарейками/жидкостями/порошками/магнитами?</small></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group mb-sm-3">
+                                                    <label for="form-product-image" style="margin-bottom: 0.6rem;">Ссылка на фотографию товара</label>
+                                                    <div role="group" class="input-group d-flex align-items-center">
+                                                        <input id="form-product-image" type="text" class="form-control">
+                                                        <div class="input-group-append">
+                                                            <button type="button" disabled="disabled" class="btn ml-1 btn-info btn-sm disabled" style="width: 36px; height: 36px; border-bottom-left-radius: 0; border-top-left-radius: 0;">
+                                                                <svg viewBox="0 0 16 16" width="1em" height="1em" focusable="false" role="img" aria-label="eye fill" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi-eye-fill b-icon bi"><g><path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"></path><path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"></path></g></svg>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group mb-sm-3">
+                                                    <label for="form-comment" class="d-block" style="margin-bottom: 0.6rem;">Комментарий к заказу</label>
+                                                    <textarea id="form-comment" placeholder="Склад не видит этот комментарий! Заполняйте только для вашего личного использования в кабинете." wrap="soft" class="form-control" style="resize: none; overflow-y: scroll; height: 86px;"></textarea>
+                                                </div>
+
+                                                <button type="button" onclick="uslugi1()" class="btn mb-1 btn-info mb-sm-3" style="background-color: #138496; border-color: #138496; color: #fff;" >
+                                                     Дополнительные услуги 
+                                                    <svg viewBox="0 0 16 16" width="1em" height="1em" focusable="false" role="img" aria-label="chevron down" icon="chevron-down" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi-chevron-down b-icon bi"><g><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></g></svg>
+                                                </button>
+
+                                                <div id="services" class="collapse show " id="collapse">
+                                                    <div class="card p-2">
+                                                        <div class="form-group d-flex align-items-center">
+                                                            <div class="d-inline-block mr-2 mb-1">
+                                                                <div class="custom-control custom-switch b-custom-control-lg d-flex align-items-center">
+                                                                    <input type="checkbox" class="custom-control-input" value="true" id="__BVID__111" style="width: 30px; height: 20px;">
+                                                                    <label class="custom-control-label" for="__BVID__111" style="font-size: 18px; margin-right: 6px;"><small>Проверка на соответствие?</small></label>
+                                                                </div>
+                                                            </div>
+                                                            <span class="text-danger align-middle" style="font-size: 16px;">0.5$/кг</span>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="d-inline-block mr-2 mb-1">
+                                                                <div class="custom-control custom-switch b-custom-control-lg d-flex align-items-center">
+                                                                    <input type="checkbox" class="custom-control-input" value="true" id="__BVID__112" disabled="enabled" style="width: 30px; height: 20px;">
+                                                                    <label class="custom-control-label" for="__BVID__112" style="font-size: 18px; margin-right: 6px;"><small>Фотоотчёт?</small></label>
+                                                                </div>
+                                                            </div>
+                                                            <span class="text-danger align-middle" style="font-size: 16px;">1$/шт</span>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="d-inline-block mr-2 mb-1">
+                                                                <div class="custom-control custom-switch b-custom-control-lg">
+                                                                    <input type="checkbox" class="custom-control-input" value="true" id="__BVID__113" style="width: 30px; height: 20px;">
+                                                                    <label class="custom-control-label" for="__BVID__113" style="font-size: 18px; margin-right: 6px;"><small>Оставить оригинальную упаковку?</small></label>
+                                                                </div>
+                                                            </div>
+                                                            <span class="text-success align-middle" style="font-size: 16px;">бесплатно</span>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="d-inline-block mr-2 mb-1">
+                                                                <div class="custom-control custom-switch b-custom-control-lg">
+                                                                    <input type="checkbox" disabled="disabled" class="custom-control-input" value="true" id="__BVID__114" style="width: 30px; height: 20px;">
+                                                                    <label class="custom-control-label" for="__BVID__114" style="font-size: 18px; margin-right: 6px;"><small>Переупаковать?</small></label>
+                                                                </div>
+                                                            </div>
+                                                            <span class="text-danger align-middle" style="font-size: 16px;">0.4$/кг</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </form>
+
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-primary" style="cursor: pointer; color: #fff; background-color: #28a745; border-color: #28a745;"> Сохранить </button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
                             </div>
                         </div>
                         <div class="tabs" id="__BVID__45">
@@ -203,8 +388,10 @@
                     </div>
                 </div>
             </main>
+
             <div class="b-sidebar-backdrop bg-dark" id="b-sidebar-backdrop" onclick="sidebar_backdrop()"></div>
         </div>
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
