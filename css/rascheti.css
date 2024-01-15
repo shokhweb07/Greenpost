@@ -1,0 +1,36 @@
+@import url(kabinet.css);
+
+*{
+    box-sizing: border-box;
+}
+
+.main{
+    width: 100%;
+}
+
+.main h2{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+
+.table1 th{
+    font-size: 16px;
+    color: #212529;
+    border-width: 1px;
+    border-color: #86cfda;
+    padding: .5rem;
+}
+
+.table1 .tr1 th{
+    background: #d1ecf1;
+}
+
+.header .btn-hid svg {
+    font-size: 0.875rem;
+    padding: 0.2rem 0.3rem;
+    border: 1px solid #fff;
+    border-radius: 0.2rem;
+}

@@ -10,6 +10,7 @@
 }
 
 .wrapper{
+    position: relative;
     display: grid;
     grid-template-columns: 0fr 6fr;
 }
@@ -20,7 +21,6 @@
     padding: 1rem 0;
     cursor: pointer;
     min-width: 200px;
-    z-index: 10;
 }
 
 #asosiy{
@@ -107,45 +107,18 @@
     align-items: center;
     gap: 20px;
 }
-
-.qism1 .d-flex img {
-    width: 40px;
-    height: 40px;
-    margin-right: 6px;
-}
-
 .header .btn-hid{
     cursor: pointer;
     padding: 0.25rem 0.5rem;
     line-height: 1.5;
 }
 
-.header .btn-hid2 {
-    display: none;
-}
-
-.header .btn-hid svg {
-    font-size: 0.875rem;
-    padding: 0.20rem 0.30rem;
-    border: 1px solid #fff;
-    border-radius: 0.2rem;
-}
-
 .hide-active{
     margin-left: -200px;
 }
 
-#brand {
+#brand, #slogin{
     color: #fff;
-    margin-top: -2px;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1;
-}
-
-#slogin{
-    color: #fff;
-    font-size: 12px;
 }
 
 .header .qism2{
@@ -167,68 +140,25 @@
     color: white;
 }
 
-.qism2 .phone {
-    display: none;
-}
-
 .header .tel-nomer img{
     height: 16px;
     width: 16px;
 }
 
-/* main start */
-
-.container-fluid {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 1rem;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-}
-
-.tabs .card-header {
-    background: none;
-    border: 0;
-    border-radius: 0;
-}
-
-.tabs .nav-tabs .nav-item .nav-link {
-    font-weight: 700;
-    border-color: #dee2e6;
-}
-
-.tabs .nav-tabs .nav-item .nav-link.active {
-    background-color: #fff;
-}
-
-.tabs .nav-tabs .nav-item .nav-link:not(.active) {
-    color: inherit;
-    background: #f8f9fa;
-}
-
-.tabs .tab-content {
-    padding-left: 1rem;
-    padding-bottom: 1rem;
-    border: 1px solid #dee2e6;
-    border-radius: 0 0.25rem 0.25rem 0.25rem;
-}
-
-
-.b-sidebar-backdrop {
+.header .phone-icon{
     display: none;
-    left: 0;
-    z-index: 1;
-    width: 100vw;
-    opacity: .6;
+}
 
+.phone-icon img{
+    width: 32px;
+    height: 32px;
+    animation: phone 2s infinite;
+}
+
+.main{
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 #empty-qism{
@@ -239,15 +169,64 @@
     display: none;
 }
 
-#kontakti{
+.btn-hid2{
     display: none;
+}
+
+#kontakti{
     transition: .3s;
 }
 
-/* media start */
+.wrapper .part{
+    width: 100%;
+}
 
-@media screen and (max-width: 992px){
 
+@keyframes phone {
+    10% {
+        transform: rotate(5deg);
+    }
+    20% {
+        transform: rotate(-5deg);
+    }
+    30% {
+        transform: rotate(5deg);
+    }
+    40% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    60% {
+        transform: rotate(-5deg);
+    }
+    70% {
+        transform: rotate(5deg);
+    }
+    80% {
+        transform: rotate(-5deg);
+    }
+    90% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(-5deg);
+    }
+}
+
+
+@media only screen and (max-width: 992px){
+    .wrapper{
+        grid-template-columns: 1fr;
+    }
+    
+    #asosiy{
+        transition: .3s;
+        position: absolute;
+        z-index: 2;
+    }
+    
     #empty-qism{
         display: block;
         position: absolute;
@@ -304,123 +283,35 @@
         height: 16px;
     }
     
-    .part .qism1 .btn-hid1 {
+    .btn-hid{
         display: none;
-    }
-
-    .part .qism1 .btn-hid2 {
-        display: block;
-    }
-
-    .wrapper .part {
-        width: 100%;
-        position: absolute;
-        top: 0;
-    } 
-
-    .b-sidebar-backdrop {
-        position: absolute;
-        top: 0;
-        display: block;
-        width: 100%;
-        height: 100vh;
-    }
-
-    .qism2 .block{
-        display: none;
-    }
-
-    .qism2 .phone {
-        display: block;
-    }
-
-    @keyframes phone {
-        10% {
-            transform: rotate(5deg);
-        }
-        
-        20% {
-            transform: rotate(-5deg);
-        }
-        30% {
-            transform: rotate(5deg);
-        }
-        40% {
-            transform: rotate(-5deg);
-        }
-        50% {
-            transform: rotate(5deg);
-        }
-        60% {
-            transform: rotate(-5deg);
-        }
-        70% {
-            transform: rotate(5deg);
-        }
-        80% {
-            transform: rotate(-5deg);
-        }
-        90% {
-            transform: rotate(5deg);
-        }
-        100% {
-            transform: rotate(-5deg);
-        }
     }
     
-    .qism2 .phone {
-        animation: phone 2s infinite;
-    }
-
-    .part {
-        min-width: 100%;
+    .btn-hid2{
+        display: block;
     }
 }
 
-@media screen and (max-width: 542px){
-    .qism1 .d-flex img {
-        width: 26px;
-        height: 26px;
-    }
-    .qism1 .d-flex div #brand {
-        font-size: 16px;
-    }
-    .qism1 .d-flex div #slogin {
-        font-size: 10px;
-    }
-}
-
-@media screen and (max-width: 502px){
-    .qism1 .d-flex div #brand {
-        font-size: 12px;
-    }
-    .qism1 .d-flex div #slogin {
-       font-size: 8px;
-    }
-}
-
-@media screen and (max-width: 480px){
-    .qism1 .d-flex img {
-        width: 40px;
-        height: 40px;
-    }
-    .qism1 .d-flex div #brand {
+@media only screen and (max-width: 806px){
+    .header .qism2{
         display: none;
     }
-    .qism1 .d-flex div #slogin {
-       display: none;
+    
+    .header .phone-icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 0;
     }
 }
 
+@media only screen and (min-width: 992.1px){
+    #kontakti{
+        display: none;
+    }
 
-@media screen and (max-width: 460px){
-    .nav-item {
-        font-size: 10px;
+    #empty-qism1{
+        display: none;
     }
 }
 
-@media screen and (max-width: 414px){
-    .nav-item {
-        font-size: 8px;
-    }
-}

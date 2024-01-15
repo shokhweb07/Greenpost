@@ -51,7 +51,9 @@ function vxod(){
   document.getElementById('login-wrap1').style.marginTop = '20vh'
 }
 
-// 
+function hideMenu(){
+  document.querySelector('.asosiy').classList.toggle('hide-active')
+}
 
 function saveModal(){
   var inp1 = document.getElementById('fio')
@@ -112,6 +114,10 @@ function exitMain2(){
   document.getElementById('main').style.display = 'block'
 }
 
+function Andijon(){
+  document.getElementById('toshkent').style.display = 'none'
+  document.getElementById('andijon').style.display = 'block'
+}
 
 function onEmpty(){
   document.getElementById('asosiy').style.left = '-200px'
@@ -135,9 +141,6 @@ function contactOff(){
   document.getElementById('empty-qism1').style.display = 'none'
 }
 
-function voyti(){
-  
-}
 // admin panel
 function hideMenu1(){
   document.querySelector('.asosiy').classList.toggle('hide-active')
@@ -179,9 +182,9 @@ function nacklade(){
 }
 
 function uslugi1(){
-  document.querySelector('.collapse').style.display = 'block'
-}
+  document.getElementById('services').style.display = 'block';
 
+}
 
 // posilki 
 
@@ -206,4 +209,3 @@ function dostavke(){
   BVID194.style.background = '#f8f9fa'
   BVID196.style.background = '#fff'
 }
-

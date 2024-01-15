@@ -1,0 +1,117 @@
+@import url(kabinet.css);
+
+.header .btn-hid svg {
+    font-size: 0.875rem;
+    padding: 0.2rem 0.3rem;
+    border: 1px solid #fff;
+    border-radius: 0.2rem;
+}
+
+.main .block1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.main .block1 h2{
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.modal-btn{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+    color: #fff;
+    background-color: #28a745; 
+    border-color: #28a745;
+    font-weight: 400;
+    transition: .3s;
+}
+
+.modal-btn:hover{
+    background-color: #1e8536; 
+    color: #fff;
+}
+
+
+.table1 th{
+    font-size: 16px;
+    color: #212529;
+    border-width: 1px;
+    border-color: #86cfda;
+    padding: .75rem;
+}
+
+.table1 .tr1 th{
+    background: #d1ecf1;
+}
+
+#trs th{
+    font-size: 16px;
+    color: #212529;
+    border-width: 1px;
+    border-color: #86cfda;
+    padding: .75rem;
+}
+
+.modal-header{
+    color: #fff;
+    background: #17a2b8;
+    font-size: 1.25rem;
+}
+
+.modal-footer button{
+    background-color: #28a745;
+    color: 1rem;
+    font-size: 1rem;
+}
+
+.modal-main{
+    font-size: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 12px;
+}
+
+
+.modal-main input{
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+#trs tr th{
+    font-size: 13px;
+    font-weight: 400;
+}
+
+#andijon{
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 500px){
+    .main .block1{
+        flex-direction: column;
+        align-items: start;
+    }
+}

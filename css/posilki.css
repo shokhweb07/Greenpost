@@ -195,7 +195,6 @@
 }
 
 .tabs .card-header {
-    padding: 0 0.625rem;
     background: none;
     border: 0;
     border-radius: 0;
@@ -216,9 +215,12 @@
 }
 
 .tabs .tab-content {
+    padding-left: 1rem;
+    padding-bottom: 1rem;
     border: 1px solid #dee2e6;
     border-radius: 0 0.25rem 0.25rem 0.25rem;
 }
+
 
 .b-sidebar-backdrop {
     display: none;
@@ -228,95 +230,10 @@
     opacity: .6;
 
 }
-/* modal */
-.mb-sm-3 {
-    margin-bottom: 1rem;
-}
-
-select {
-    height: 34px;
-    width: 100%;
-}
-
-.collapse {
-    display: none;
-}
-
-#empty-qism{
-    display: none;
-}
-
-#empty-qism1{
-    display: none;
-}
-
-#kontakti{
-    display: none;
-    transition: .3s;
-}
-
 
 /* media start */
 
 @media screen and (max-width: 992px){
-
-    
-    #empty-qism{
-        display: block;
-        position: absolute;
-        right: 0;
-        left: 0;
-        background-color: #343a40;
-        opacity: .6;
-        height: 100vh;
-        z-index: 1;
-    }
-
-    #empty-qism1{
-        position: absolute;
-        right: 0;
-        left: 0;
-        background-color: #343a40;
-        opacity: .6;
-        height: 100vh;
-        z-index: 1;
-    }
-
-    #kontakti{
-        display: none;
-        font-family: inherit;
-        font-size: 16px;
-        color: #f8f9fa;
-        font-weight: 700;
-        position: absolute;
-        right: 0;
-        line-height: 1.6;
-        margin-right: -270px;
-        height: 100vh;
-        max-width: 270px;
-        background: #343a40;
-        padding: 1rem 15px;
-        z-index: 2;
-    }
-
-    #kontakti h2{
-        font-size: 2rem;
-        line-height: 1.2;
-        font-weight: 700;
-        margin-bottom: 8px;
-    }
-
-    #kontakti .kontakt-nomer{
-        display: flex;
-        align-items: center;
-        gap: 7px;
-    }
-
-    #kontakti .kontakt-nomer img{
-        width: 16px;
-        height: 16px;
-    }
-
     .part .qism1 .btn-hid1 {
         display: none;
     }
@@ -385,6 +302,9 @@ select {
         animation: phone 2s infinite;
     }
 
+    .part {
+        min-width: 100%;
+    }
 }
 
 @media screen and (max-width: 542px){
@@ -422,14 +342,9 @@ select {
     }
 }
 
+
 @media screen and (max-width: 460px){
     .nav-item {
-        font-size: 10px;
-    }
-}
-
-@media screen and (max-width: 414px){
-    .row .col-auto button  {
         font-size: 10px;
     }
 }
