@@ -428,6 +428,9 @@ footer .background {
 
 
 @media only screen and (max-width: 991.5px){
+    .site-TR h1 {
+        margin-top: 120px;
+    }
     .telephone, .instruksiya, .language, .menus-wrap{
         display: none;
     }
