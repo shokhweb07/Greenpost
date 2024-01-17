@@ -148,9 +148,9 @@ function hideMenu1(){
 
 function hideMenu2(){
   document.getElementById('asosiy').style.display = 'block'
+  document.getElementById('asosiy').style.left = '0px'
   document.getElementById('b-sidebar-backdrop').style.display = 'block'
 }
-
 
 function sidebar_backdrop(){
   document.querySelector('.asosiy').style.display = 'none'
@@ -179,11 +179,6 @@ function nacklade(){
 
   BVID46.style.background = '#f8f9fa'
   BVID48.style.background = '#fff'
-}
-
-function uslugi1(){
-  document.getElementById('services').style.display = 'block';
-
 }
 
 // posilki 
