@@ -157,6 +157,10 @@ function sidebar_backdrop(){
   document.getElementById('b-sidebar-backdrop').style.display = 'none'
 }
 
+function uslugi1() {
+  document.getElementById('services').style.display = 'block'
+}
+
 // tovari 
 
 function kuplenniye(){
